@@ -25,7 +25,7 @@ public class numberofelementstotheleft {
 
         int[] nums = {1,2,3,4,5,6,7,8,9};
 
-        int tar = -1;
+        int tar = 7;
 
         int numberofele = leftelements(nums, tar);
 

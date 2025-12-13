@@ -22,7 +22,9 @@ public class HashmapCheck {
         // list All values
         System.out.println(maplist.values());
 
-        System.out.println(maplist.keySet());
+        System.out.println(maplist.containsKey("kishore"));
+
+        System.out.println(maplist.containsValue(1));
 
         // Loop using entry set
         for (Map.Entry<String, Integer> entry : maplist.entrySet()) {

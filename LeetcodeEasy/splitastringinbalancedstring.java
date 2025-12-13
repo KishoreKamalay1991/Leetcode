@@ -32,6 +32,7 @@ public class splitastringinbalancedstring {
 
           String str = "RLRRLLRLRL";
           int result = balancedString(str);
+          System.out.println(result);
 
     }
 

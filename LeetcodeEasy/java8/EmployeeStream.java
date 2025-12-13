@@ -50,6 +50,12 @@ public class EmployeeStream {
         System.out.println("map1-startswithK-"+map1.get(true));
 
 
+        Map<Boolean, List<Employee>> agegreaterthan30 = employeeList.stream().collect(Collectors.partitioningBy(s -> s.getAge() > 30));
+        System.out.println("agegreaterthan30-"+agegreaterthan30.get(true));
+
+
+
+
 
 
 
