@@ -10,8 +10,6 @@ public class findthedifference {
             if (a[i] != b[i]) return b[i];
         }
         return b[b.length - 1];
-
-
     }
 
 

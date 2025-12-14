@@ -16,17 +16,10 @@ public class validAnagrams {
 
         for (int i = 0 ; i < sArr.length ; i++) {
             if (sArr[i] != tArr[i]) {
-
                 return false;
-
             }
-
         }
-
         return true;
-
-
-
     }
 
     public static void main(String[] args) {

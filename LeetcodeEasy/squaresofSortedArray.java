@@ -6,10 +6,7 @@ public class squaresofSortedArray {
 
         int[] res = new int[arr.length];
       for (int i = 0; i < arr.length; i++) {
-
          res[i] = arr[i] * arr[i];
-
-
       }
 
       Arrays.sort(res);

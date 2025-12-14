@@ -13,8 +13,6 @@ public class singleElementinsortedArray {
             }
 
         }
-
-
         return 0;
     }
 
