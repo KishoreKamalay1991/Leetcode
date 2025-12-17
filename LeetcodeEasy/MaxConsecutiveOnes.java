@@ -16,7 +16,6 @@ public class MaxConsecutiveOnes {
         }
 
         return max;
-
     }
 
     public static void main(String[] args) {
