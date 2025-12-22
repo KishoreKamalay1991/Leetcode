@@ -31,6 +31,8 @@ public class searchInsertPosition {
 
         int indexPosition = searchInsert(nums, target);
 
+        System.out.println("index position " + indexPosition);
+
 
 
     }
