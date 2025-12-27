@@ -6,8 +6,6 @@ public class TopKfrquencyusingHeap {
 
     private static int[] topKfrequentElements(int[] nums, int k1) {
 
-
-
         Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
