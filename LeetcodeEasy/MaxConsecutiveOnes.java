@@ -12,7 +12,6 @@ public class MaxConsecutiveOnes {
               else  {
                j = 0;
              }
-
         }
 
         return max;
