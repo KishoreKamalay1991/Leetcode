@@ -28,7 +28,6 @@ public class setmatriceszero {
                     matrix[i][j] = 0;
                 }
             }
-
         }
 
         return matrix;
