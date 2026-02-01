@@ -12,12 +12,14 @@ public class GroupAnagrams {
 
         for (String str : strs) {
             char[] charArray = str.toCharArray();
+      
             Arrays.sort(charArray);
             String sortedStr = new String(charArray);
 
             if (!map.containsKey(sortedStr)) {
                 map.put(sortedStr, new ArrayList<>());
             }
+          
             map.get(sortedStr).add(str);
         }
 
