@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class mergeintervals {
 
@@ -10,27 +12,23 @@ public class mergeintervals {
         }
 
         Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        
+        List<int[]> result = new ArrayList<>();
+        int[] first = intervals[0];
+        result.add(first);
+        
 
-        int[][] mergedArray = new int[n][2];
-
-        int[] current = intervals[0];
-
-
-
-        int i = 1;
-
-        while(i < intervals.length) {
+        for(int i = 1; i < intervals.length; i++) {
             int[] next = intervals[i];
-             if(current[1] >= next[0]) {
-
-                current[1] = Math.max(current[1], next[0]);
-             } else {
-
-             }
-
+            
+            if(next[0] <= first[i]) {
+             first[1] = Math.max(first[1], next[1]);
+            } else {
+                first = next;
+                result.add(first);
+            }
         }
-
-       return mergedArray;
+        return result.toArray(new int[result.size()][]);
     }
 
     public static void main(String[] args) {
