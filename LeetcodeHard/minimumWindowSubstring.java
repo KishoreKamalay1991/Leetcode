@@ -33,6 +33,10 @@ public class minimumWindowSubstring {
 			
 			// If count == 0 calculate the minimum length.
 			while(count == 0) {
+				System.out.println("count " + count);
+				System.out.println("help");
+				System.out.println(right);
+				System.out.println(left);
 				if(right - left < minLen) {
 				    minLen = right - left;
 					startIdx = left;

@@ -5,33 +5,29 @@ import java.util.List;
 
 public class removeDuplicateAnagrams2 {
 
-    public static List<String> removeduplicateAnagram(String[] arr) {
-
-        HashSet<String> set = new HashSet<>();
-
-      List<String> result = new ArrayList<>();
-
-        for (String str : arr) {
-
-            char[] sortedchr = str.toCharArray();
-            Arrays.sort(sortedchr);
-            String sortedstr = new String(sortedchr);
-            if (set.add(sortedstr)) {
-                result.add(str);
-            }
+public static List<String> removeAnagrams(String[] words) {
+    
+    List<String> result = new ArrayList();
+    String lastSorted = "";
+    
+    for(int i = 0; i < words.length; i++) {
+        char[] cars =  words[i].toCharArray();
+        Arrays.sort(cars);
+        String sortedStr = new String(cars);
+        if (!sortedStr.equals(lastSorted)) {
+            result.add(words[i]);
+            lastSorted = sortedStr; // Update the "previous" marker
         }
-
-
-     return result;
-
-
     }
+    
+    return result;
+}
 
     public static void main(String[] args) {
 
         String[] words = {"tan", "ant", "nat","hnm", "cd", "cd", "nmh"};
 
-        List<String> allword = removeduplicateAnagram(words);
+        List<String> allword = removeAnagrams(words);
 
        System.out.println(allword);
 

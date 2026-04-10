@@ -18,6 +18,7 @@ public class subsets {
   public static void backtrack(int index, int[] nums, List<Integer> curr, List<List<Integer>> result) {
 	  result.add(new ArrayList<>(curr));
 	  for(int i = index; i < nums.length; i++) {
+		 
 		 curr.add(nums[i]);
 		 backtrack(i+1, nums, curr, result);
 		 curr.remove(curr.size() - 1);

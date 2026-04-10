@@ -8,8 +8,7 @@ public class findallnumbersdisappeared {
         // Step 1: Mark visited numbers
         for (int i = 0; i < nums.length; i++) {
             int index = Math.abs(nums[i]) - 1;
-            System.out.println("index " + index);
-            System.out.println(nums[index]);
+           
             if (nums[index] > 0) {
                 nums[index] = -nums[index];
             }

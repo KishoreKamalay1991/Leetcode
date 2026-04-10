@@ -16,10 +16,12 @@ public class alphatobetavisainterview {
             i++;
 
             System.out.println("i value " + i );
+                System.out.println("time " + time);
 
             while(j < beta2alpha.length && beta2alpha[j] < time) {
                 j++;
             }
+            System.out.println("beta2alpha[j]" + beta2alpha[j]);
             time = beta2alpha[j] + 100;
             j++;
         }

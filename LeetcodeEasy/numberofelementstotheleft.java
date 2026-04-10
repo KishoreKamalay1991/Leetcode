@@ -14,7 +14,6 @@ public class numberofelementstotheleft {
             } else {
                 right = mid;
             }
-
         }
 
         return left;

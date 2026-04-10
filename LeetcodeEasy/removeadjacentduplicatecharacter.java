@@ -28,7 +28,7 @@ public class removeadjacentduplicatecharacter {
             result += c;
         }
 
-        //return result;
+        System.out.println("result " + result);
 
 
 
